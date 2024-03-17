@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Homepage</title>
+    <!-- <script src="live.js"></script> -->
+    <script src="index.js"></script>
+  </head>
+  <body
+    class="min-h-screen w-screen mx-auto flex flex-col items-center p-16 gap-12 dark:bg-slate-900 text-slate-900 dark:text-slate-200 transition-all duration-300 ease-in-out"
+  >
+    <form
+      action="https://duckduckgo.com/"
+      method="get"
+      class="w-5/6 md: w-4/6 xl:w-1/2"
+    >
+      <label
+        for="default-search"
+        class="mb-2 text-sm font-medium text-slate-900 sr-only dark:text-white"
+        >Search</label
+      >
+      <div class="relative">
+        <div
+          class="absolute inset-y-0 end-0 flex items-center pe-4 pointer-events-none"
+        >
+          <svg
+            class="w-4 h-4 text-slate-500 dark:text-slate-400"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 20 20"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+            />
+          </svg>
+        </div>
+        <input
+          type="text"
+          id="search"
+          name="q"
+          class="block w-full p-4 pe-10 text-sm text-slate-900 border border-slate-300 rounded-lg bg-slate-50 focus:ring-teal-400 focus:border-teal-400 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-white dark:focus:ring-teal-400 dark:focus:border-teal-400 outline-none"
+          placeholder="Search Duckduckgo (press / to focus)"
+          autocomplete="off"
+          required
+        />
+      </div>
+    </form>
+    <div
+      tab-index="0"
+      id="bookmarks"
+      class="flex gap-4 xl:gap-8 grow w-full"
+    ></div>
+  </body>
+</html>
