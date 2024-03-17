@@ -7,12 +7,28 @@
   - Mirrors:
     + GitHub: <https://github.com/anhsirk0/undoo-startpage>
 
-* Undoo-Startpage
+* About
 Minimal keyboard focused startpage
-** Screenshots
+* Screnshots
 #+CAPTION: In Action
 #+NAME: home.gif
 [[https://codeberg.org/anhsirk0/undoo-startpage/raw/branch/main/screenshots/home.gif]]
 #+CAPTION: Light mode
 #+NAME: light.png
 [[https://codeberg.org/anhsirk0/undoo-startpage/raw/branch/main/screenshots/light.png]]
+* Keybindigs
+** {group-num}{bookmark-num}
+Opens the bookmark in current tab
+** /
+Focuses the seachbar
+** CTRL-G or ESCAPE
+Cancel
+* Configuration
+currently only way to configure is to modify `src/index.js`
+* Development
+#+BEGIN_SRC shell
+yarn install
+#+END_SRC
+#+BEGIN_SRC shell
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+#+END_SRC
